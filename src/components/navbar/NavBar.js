@@ -1,10 +1,12 @@
 import React from 'react'
 
+import './NavBar.css'
+
 const NavBar =()=>{
   return(
-    <nav>
+    <nav className="nav_bar">
       <header>
-        ToDo App
+        <h1>ToDo App</h1>
       </header>
     </nav>
   )
