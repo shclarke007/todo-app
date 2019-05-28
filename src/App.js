@@ -1,13 +1,20 @@
 import React from 'react'
 
 import NavBar from './components/navbar/NavBar'
-import ToDo from './components/todo/ToDo';
+import ToDo from './components/todo/ToDo'
+import './App.css'
 
 const App =()=>{
   return (
     <div>
       <NavBar />
-      <ToDo />
+      <div className='todo-list'>
+        <ToDo />
+        <ToDo />
+        <ToDo />
+        <ToDo />
+      </div>
+      
     </div>
   );
 }
