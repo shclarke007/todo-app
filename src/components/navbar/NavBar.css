@@ -6,8 +6,9 @@ body{
 .nav_bar{
   display: flex;
   justify-content: center;
+  color: whitesmoke;
   align-items: center;
-  background-color: beige;
+  background-color: grey;
   margin-bottom: 15px;
   height: 100px;
 }
