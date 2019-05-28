@@ -1,15 +1,13 @@
 import React from 'react'
+import './ToDo.css'
 
 const ToDo =()=>{
   return(
-    <div>
-      <input type='checkbox'/>
-      <p>Example #1</p>
-      <input type='checkbox'/>
-      <p>Example #2</p>
+    <div className='todo_item'>
       <input type='checkbox'/>
       <p>Example #1</p>
     </div>
+    
   )
 }
 
