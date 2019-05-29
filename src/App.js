@@ -6,8 +6,14 @@ import ToDoData from './components/todo/ToDoData'
 import './App.css'
 
 class App extends Component{
+  constructor(){
+    super()
+    this.state = {
+      todos: ToDoData
+    }
+  }
   render(){
-    const ToDoComponents = ToDoData.map((todo)=>{
+    const ToDoItems = this.state.todos.map((todo)=>{
       return(
         <ToDo key={todo.id} items={todo}/>
       )
@@ -16,7 +22,7 @@ class App extends Component{
       <div>
         <NavBar />
         <div className='todo-list'>
-          {ToDoComponents}
+          {ToDoItems}
         </div> 
       </div>
     )
