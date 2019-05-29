@@ -9,7 +9,7 @@ import ToDoData from './components/todo/ToDoData'
 const App =()=>{
   const ToDoComponents = ToDoData.map((todo)=>{
     return(
-      <ToDo key={todo.id} todo={todo}/>
+      <ToDo key={todo.id} items={todo}/>
     )
   })
   return (
