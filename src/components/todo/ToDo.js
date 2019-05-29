@@ -1,11 +1,11 @@
 import React from 'react'
 import './ToDo.css'
 
-const ToDo =()=>{
+const ToDo =(props)=>{
   return(
     <div className='todo_item'>
       <input type='checkbox'/>
-      <p>Example #1</p>
+      <p>{props.todo.text}</p>
     </div>
     
   )

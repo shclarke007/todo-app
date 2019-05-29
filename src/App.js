@@ -4,15 +4,19 @@ import NavBar from './components/navbar/NavBar'
 import ToDo from './components/todo/ToDo'
 import './App.css'
 
+import ToDoData from './components/todo/ToDoData'
+
 const App =()=>{
+  const ToDoComponents = ToDoData.map((todo)=>{
+    return(
+      <ToDo key={todo.id} todo={todo}/>
+    )
+  })
   return (
     <div>
       <NavBar />
       <div className='todo-list'>
-        <ToDo />
-        <ToDo />
-        <ToDo />
-        <ToDo />
+        {ToDoComponents}
       </div>
       
     </div>
